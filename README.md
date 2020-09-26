@@ -1,5 +1,9 @@
 # Terrain
-Earth view both in 2D and 3D based on satellite terrain data. When you load the given terrain, you can explore it by moving around either in map view (2D) or in globe view (3D). In order for data to be displayed you have to provide program with HGT files representing square 1 deg by 1 deg on Earth. There are some example files in data directory. If you want to get the data of different parts of Earth, you can download it from here: https://dds.cr.usgs.gov/srtm/version2_1/SRTM3/ - they are already in HGT format and correct name format, all you need to do is to unzip them in appropriate directory and run the program with appropriate arguments.
+Earth view both in 2D and 3D based on satellite terrain data. When you load the given terrain, you can explore it by moving around either in map view (2D) or in globe view (3D). 
+
+In order for data to be displayed you have to provide program with HGT files representing square 1 deg by 1 deg on Earth. There are some example files in data directory. 
+
+If you want to get the data of different parts of Earth, you can download it from here: https://dds.cr.usgs.gov/srtm/version2_1/SRTM3/ - they are already in HGT format and correct name format, all you need to do is to unzip them in appropriate directory and run the program with appropriate arguments.
 
 This program is entirely written in C++ from scrach - it uses OpenGL, but no external, third-party library for OpenGL.
 
