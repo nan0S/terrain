@@ -1,5 +1,5 @@
 # Terrain
-Earth view both in 2D and 3D based on satellite terrain data. For data to be displayed you have to provide program with HGT files representing square 1 deg by 1 deg on Earth. There are some example files in data directory. 
+Earth view both in 2D and 3D based on satellite terrain data. When you load the given terrain, you can explore it by moving around either in map view (2D) or in globe view (3D). In order for data to be displayed you have to provide program with HGT files representing square 1 deg by 1 deg on Earth. There are some example files in data directory. 
 
 Example usage of the program: ./terrain ../data/eurasia -lat 0 2 -lon 3 5, which will load from ..data/eurasia directory, following files: N00E03.hgt, N00E04.hgt, N01E03.hgt, N01E04.hgt (notice that ranges of latitudes and longitude are [0,2) and [3, 5)). 
 
