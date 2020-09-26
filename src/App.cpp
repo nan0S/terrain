@@ -167,7 +167,7 @@ void App::printHelp()
 {
 	std::cout << "\nNAVIGATION\n\n";
 	std::cout << "1, 2, ... , 9 - choose Level of Detail (the lower the less detailed the terrain is)\n";
-	std::cout << "If Level of Detail is greater or equal to 1, pressing 1 button\n"
+	std::cout << "If Level of Detail is less or equal to 1, pressing 1 button\n"
 			   "will cause further decrease in Level of Detail (till the minimal available level)\n";
 	std::cout << "0 - automatic Level of Detail mode\n";
 	std::cout << "M - map mode\n";
