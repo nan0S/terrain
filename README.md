@@ -5,6 +5,8 @@ Example usage of the program: ./terrain ../data/eurasia -lat 0 2 -lon 3 5, which
 
 Negative numbers in latitude represent south (S), negative numbers in longitude represent west (W), so eg. ./terrain ../data/eurasia -lat -3 -2 -lon -6 -4, will load S03W06.hgt and S03W05.hgt.
 
+This program is entirely written in C++ from scrach - it uses OpenGL, but no external, third-party library for OpenGL.
+
 #### Navigation
 
 Screenshots
