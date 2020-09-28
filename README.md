@@ -1,19 +1,20 @@
 # Terrain
 Earth view both in 2D and 3D based on satellite terrain data. When you load the given terrain, you can explore it by moving around either in map view (2D) or in globe view (3D). 
 
-In order for data to be displayed you have to provide program with HGT files representing square 1 deg by 1 deg on Earth. There are some example files in data directory. 
-
-If you want to get the data of different parts of Earth, you can download it from here: https://dds.cr.usgs.gov/srtm/version2_1/SRTM3/ - they are already in HGT format and correct name format, all you need to do is to unzip them in appropriate directory and run the program with appropriate arguments.
-
 This program is entirely written in C++ from scrach - it uses OpenGL, but no external, third-party library for OpenGL.
 
-#### Clarification of usage
-Example usage of the program: **./terrain ../data/eurasia -lat 0 2 -lon 3 5**, which will load from ..data/eurasia directory, following files: N00E03.hgt, N00E04.hgt, N01E03.hgt, N01E04.hgt (notice that ranges of latitudes and longitude are [0,2) and [3, 5)). 
+In order for data to be displayed you have to provide program with HGT files representing square 1 deg by 1 deg on Earth. There are some example files in data directory. 
 
-Negative numbers in latitude represent south (S), negative numbers in longitude represent west (W), so eg. **./terrain ../data/eurasia -lat -3 -2 -lon -6 -4**, will load S03W06.hgt and S03W05.hgt.
+#### More data
+If you want to get the data of different parts of Earth, you can download it from here: https://dds.cr.usgs.gov/srtm/version2_1/SRTM3/ - they are already in HGT format and correct name format, all you need to do is to unzip them in appropriate directory and run the program with appropriate arguments.
+
+#### Clarification of usage
+Example usage of the program: ```./terrain ../data/eurasia -lat 0 2 -lon 3 5```, which will load from ```..data/eurasia``` directory, following files: ```N00E03.hgt```, ```N00E04.hgt```, ```N01E03.hgt```, ```N01E04.hgt``` (notice that ranges of latitudes and longitude are [0,2) and [3, 5)). 
+
+Negative numbers in latitude represent south (S), negative numbers in longitude represent west (W), so eg. ```./terrain ../data/eurasia -lat -3 -2 -lon -6 -4```, will load ```S03W06.hgt``` and ```S03W05.hgt```.
 
 #### Screenshot usage
-If you want to see the same picture as in the screenshots, there are HGT files provided in data/eurasia directory and appropriate command is: **./terrain ../data/eurasia -lat 0 1 -lon 107 116**.
+If you want to see the same picture as in the screenshots, there are HGT files provided in data/eurasia directory and appropriate command is: ```./terrain ../data/eurasia -lat 0 1 -lon 107 116```.
 
 #### Navigation
 ##### General
