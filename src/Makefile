@@ -1,14 +1,3 @@
-# main.out: 
-# %.o: %.cpp
-	# g++ -c $< -std=c++17
-
-# %.out: %.o
-	# g++ $< -o $@ -std=c++17 -ggdb -pthread App.o Window.o Shader.o View.o Tile.o FPScounter.o Camera.o MapData.o GlobData.o Frame.o -lGLEW -lGL -lglfw
-
-# clean:
-	# rm -f *.o *.out *~
-
-
 TARGET = main
 EXENAME = terrain
 DEPS = main.o App.o Window.o Shader.o View.o Tile.o FPScounter.o Camera.o MapData.o GlobData.o Frame.o
